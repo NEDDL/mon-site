@@ -51,7 +51,7 @@ export const Section = styled.section`
   background-color: ${Colors.background};
   min-height: ${({ fullHeight }) => (fullHeight ? "100vh" : null)};
   width: 100%;
-  padding: 200px 50px;
+  padding: 150px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
