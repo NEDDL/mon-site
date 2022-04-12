@@ -5,7 +5,7 @@ import { Paragraph, Colors } from "../../globalStyles";
 export const ExperienceContainer = styled.div`
   display: flex;
 
-  column-gap: 100px;
+  column-gap: 20px;
   margin: 100px 0px;
   width: 100%;
   position: relative;
@@ -40,6 +40,20 @@ export const Box = styled.div`
     padding-left: 70px;
     margin-bottom: 0px;
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 0 20px 20px;
+    border-left: 3px solid ${Colors.dirtyWhite};
+
+    &:first-child {
+      margin-top: 0px;
+      padding-left: 20px;
+    }
+    &:last-child {
+      padding-left: 20px;
+      margin-bottom: 0px;
+    }
+  }
 `;
 
 export const FixedMenu = styled.div`
@@ -49,5 +63,9 @@ export const FixedMenu = styled.div`
   top: 250px;
 
   align-self: flex-start;
-  width: ${({ width }) => (width ? width : null)};
+  min-width: clamp(150px, 16vw, 250px);
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;

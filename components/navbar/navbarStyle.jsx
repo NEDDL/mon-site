@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  max-width: clamp(1030px, 70vw, 1275px);
+
   margin-right: auto;
   margin-left: auto;
   height: 3em;

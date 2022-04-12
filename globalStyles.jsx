@@ -39,7 +39,7 @@ export const FontSize = {
   normal: "clamp(1em, 1.1vw, 1.2em)",
   smaller: "clamp(0.95em, 1.1vw, 1.1em)",
   small: "clamp(0.9em, 1.1vw, 1em)",
-  tag: "",
+  tag: "clamp(0.8em, 1.1vw, 1.2em)",
 };
 
 export const Fonts = {
@@ -55,15 +55,23 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 450px) {
+    padding: 75px 20px;
+  }
 `;
 export const Container = styled.div`
   max-width: ${({ width }) => (width ? width : "1200px")};
   display: ${({ flex }) => (flex ? "flex" : null)};
   flex-direction: ${({ column }) => (column ? "row" : "column")};
+
   column-gap: 50px;
 
   @media screen and (max-width: 1200px) {
     max-width: 1100px;
+  }
+  @media screen and (max-width: 650px) {
+    flex-wrap: wrap;
   }
 `;
 
@@ -201,7 +209,7 @@ export const Tags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: ${({ width }) => (width ? width : "55%")};
+  max-width: ${({ width }) => (width ? width : "600px")};
   column-gap: 10px;
   row-gap: 10px;
 `;
@@ -209,6 +217,7 @@ export const Tags = styled.div`
 export const Tag = styled.div`
   margin: 0;
   font-family: ${Fonts.monospace};
+  font-size: ${FontSize.tag};
   font-weight: 700;
   color: ${Colors.white};
   background-color: ${({ color }) => color && color};
@@ -252,13 +261,20 @@ export const LittleTag = styled.div`
 `;
 
 export const ImageFrame = styled.div`
-  pointer-events: none;
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding-top: 6px;
-  border-bottom: 2px solid ${Colors.teal};
-  padding-bottom: 6px;
-  border-right: 2px solid ${Colors.teal};
-  padding-right: 9px;
+  max-width: 350px;
+  min-width: 200px;
+  filter: grayscale(80%);
+  transition: filter 100ms ease-in-out;
+
+  &:hover {
+    filter: none;
+  }
+
+  @media screen and (max-width: 650px) {
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    filter: none;
+  }
 `;

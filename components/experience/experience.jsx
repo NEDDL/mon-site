@@ -143,7 +143,7 @@ export const Experience = () => {
         <H2>Where I have worked</H2>
         <ExperienceContainer>
           <div style={{ position: "relative", display: "block" }}>
-            <FixedMenu width={"200px"}>
+            <FixedMenu>
               {ExperienceData.map((el, index) => (
                 <div key={index}>
                   <Numbering

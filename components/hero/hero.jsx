@@ -123,7 +123,7 @@ export const Hero = () => {
         </H1>
         <Separator gap={"30px"} />
         <Paragraph
-          maxWidth="60%"
+          maxWidth="550px"
           dangerouslySetInnerHTML={{ __html: HeroData.shortText }}
         />
         <Separator gap={"80px"} />
