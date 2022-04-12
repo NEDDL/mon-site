@@ -131,7 +131,7 @@ export const Paragraph = styled.p`
   font-weight: ${({ bold }) => (bold ? 900 : 400)};
   transition: all 200ms ease-in-out;
 
-  line-height: 1.5em;
+  line-height: 1.7em;
   max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
 
   Highlighted {
@@ -209,7 +209,7 @@ export const Tags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: ${({ width }) => (width ? width : "600px")};
+  max-width: ${({ width }) => (width ? width : "700px")};
   column-gap: 10px;
   row-gap: 10px;
 `;
