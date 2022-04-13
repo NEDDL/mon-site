@@ -209,7 +209,7 @@ export const Tags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: ${({ width }) => (width ? width : "700px")};
+  max-width: ${({ width }) => (width ? width : "850px")};
   column-gap: 10px;
   row-gap: 10px;
 `;
