@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CgClose, CgMenu } from "react-icons/cg";
 import { useRouter } from "next/router";
-import { RiArrowDropDownLine, RiAccountCircleLine } from "react-icons/ri";
+import { RiAccountCircleLine } from "react-icons/ri";
 import {
   Nav,
   NavbarContainer,
@@ -11,14 +11,9 @@ import {
   NavMenu,
   NavLinks,
   NavItem,
-  DropdownIcon,
   ClientIcon,
-  DropdownContainer,
-  DropdownLink,
-  Row,
 } from "./navbarStyle";
-import { data } from "./navbarData";
-import Image from "next/image";
+import { data } from "../../data/navbarData";
 
 function Navbar() {
   const [show, setShow] = useState(false);

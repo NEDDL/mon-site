@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import styled from "styled-components";
-import About from "../components/about/about";
-import Education from "../components/education/education";
-import Experience from "../components/experience/experience";
-import Hero from "../components/hero/hero";
+import About from "../src/components/about/about";
+import Education from "../src/components/education/education";
+import Experience from "../src/components/experience/experience";
+import Hero from "../src/components/hero/hero";
+import { Portfolio } from "../src/components/portfolio/portfolio";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <Hero />
       <About />
+      <Portfolio />
       <Experience id="experience" />
       <Education id="education" />
     </>

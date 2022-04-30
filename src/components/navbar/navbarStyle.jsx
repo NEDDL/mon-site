@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container, Colors, Fonts } from "../../globalStyles";
+import { Container, Colors, Fonts } from "../../../styles/globalStyles";
 import Link from "next/link";
 
 export const Nav = styled.nav`

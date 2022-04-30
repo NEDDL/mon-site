@@ -1,5 +1,5 @@
-import SiteLayout from "../components/Layout";
-import { GlobalStyle } from "../globalStyles";
+import SiteLayout from "../src/components/Layout";
+import { GlobalStyle } from "../styles/globalStyles";
 
 function MyApp({ Component, pageProps }) {
   return (

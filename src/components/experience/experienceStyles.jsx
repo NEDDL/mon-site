@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import Image from "next/image";
-import { Paragraph, Colors } from "../../globalStyles";
+import { Paragraph, Colors } from "../../../styles/globalStyles";
 
 export const ExperienceContainer = styled.div`
   display: flex;

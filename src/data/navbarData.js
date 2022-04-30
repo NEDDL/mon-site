@@ -5,6 +5,11 @@ export const data = [
     id: "about",
   },
   {
+    to: "/#portfolio",
+    text: "Portfolio",
+    id: "portfolio",
+  },
+  {
     to: "/#experience",
     text: "Experience",
     id: "experience",

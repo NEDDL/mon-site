@@ -4,11 +4,12 @@ import Image from "next/image";
 export const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
+    counter-reset: section;
 }
   body {
     padding: 0;
     margin: 0;
-    counter-reset: section;
+    
     counter-reset: navLink;
   }
   *{
@@ -139,6 +140,17 @@ export const Paragraph = styled.p`
     font-family: ${Fonts.monospace};
     margin: 0 5px;
   }
+`;
+export const Title = styled.p`
+  color: ${({ darker }) => (darker ? Colors.dirtyWhite : Colors.teal)};
+  font-family: ${({ inconsolata }) =>
+    inconsolata ? Fonts.monospace : Fonts.sansSerif};
+  font-size: ${({ smaller }) => (smaller ? FontSize.smaller : FontSize.normal)};
+  font-weight: 900;
+  transition: all 200ms ease-in-out;
+
+  line-height: 1.7em;
+  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
 `;
 
 export const Highlighted = styled.span`
