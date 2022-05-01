@@ -32,6 +32,16 @@ export const Card = styled.div`
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
+
+  @media screen and (max-width: 720px) {
+    width: 100%;
+    min-height: 220px;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    min-height: 330px;
+  }
 `;
 
 export const CardTitle = styled(Title)`

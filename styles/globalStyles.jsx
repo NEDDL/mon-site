@@ -12,7 +12,16 @@ export const GlobalStyle = createGlobalStyle`
     
     counter-reset: navLink;
   }
-  *{
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+  }
+  
+  * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -56,6 +65,13 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 1300px) {
+    padding: 150px 100px;
+  }
+  @media only screen and (max-width: 760px) {
+    padding: 150px 20px;
+  }
 
   @media screen and (max-width: 450px) {
     padding: 75px 20px;

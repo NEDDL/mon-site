@@ -15,7 +15,7 @@ import { AboutData } from "../../data/aboutData";
 const About = () => {
   return (
     <Section id="about">
-      <Container width={"1100px"}>
+      <Container width={"960px"}>
         <H2>Who am I?</H2>
         <Separator gap={"60px"} />
         <Container flex column>

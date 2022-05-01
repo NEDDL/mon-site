@@ -46,7 +46,13 @@ export const Hero = () => {
           ))}
         </Tags>
         <Separator gap={"60px"} />
-        <PrimaryButton>Want to talk to me?</PrimaryButton>
+        <a
+          href="mailto:mustafasaitonal@outlook.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <PrimaryButton>Want to talk to me?</PrimaryButton>
+        </a>
       </Container>
     </Section>
   );

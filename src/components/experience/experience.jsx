@@ -39,7 +39,7 @@ export const Experience = () => {
 
   return (
     <Section id="experience">
-      <Container width={"1100px"}>
+      <Container width={"960px"}>
         <H2>Where I have worked</H2>
         <ExperienceContainer>
           <div style={{ position: "relative", display: "block" }}>
