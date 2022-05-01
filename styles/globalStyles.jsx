@@ -250,8 +250,7 @@ export const Tag = styled.div`
   color: ${Colors.white};
   background-color: ${({ color }) => color && color};
   padding: 8px 20px;
-  outline: 1px ${Colors.background} solid;
-  outline-offset: -3px;
+
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -259,6 +258,11 @@ export const Tag = styled.div`
   &:hover {
     transition: all 200ms ease-in-out;
     transform: scale(1.05);
+  }
+
+  @media screen and (min-width: 550px) {
+    outline: 1px ${Colors.background} solid;
+    outline-offset: -3px;
   }
 `;
 

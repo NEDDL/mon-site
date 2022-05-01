@@ -18,6 +18,7 @@ export const Hero = () => {
   return (
     <Section id="hero" fullHeight>
       <Container>
+        <Separator gap={"50px"} />
         <Paragraph>
           <Highlighted inconsolata>{HeroData.starter}</Highlighted>
         </Paragraph>
