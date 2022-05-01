@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import {
+  Colors,
   Container,
   H2,
   ImageFrame,
@@ -8,6 +9,7 @@ import {
   Section,
   Separator,
 } from "../../../styles/globalStyles";
+import { BiCertification } from "react-icons/bi";
 import { AboutData } from "../../data/aboutData";
 
 const About = () => {
@@ -27,6 +29,26 @@ const About = () => {
           </ImageFrame>
           <Paragraph>{AboutData.about}</Paragraph>
         </Container>
+        <Separator gap={"100px"} />
+        <Paragraph bold>Certificates</Paragraph>
+        <Separator gap={"20px"} />
+        {AboutData.certificates.map((el, index) => (
+          <Container flex column key={index}>
+            <BiCertification
+              color={Colors.yellow}
+              style={{ marginTop: 5, marginRight: -30 }}
+              size={30}
+            />
+            <Container>
+              <Paragraph bold>{el.title}</Paragraph>
+              <Paragraph smaller>{`Issued by ${el.issuer}`}</Paragraph>
+              <Paragraph smaller darker>
+                {`Credential ID ${el.credential}`}
+              </Paragraph>
+              <Separator gap={"50px"} />
+            </Container>
+          </Container>
+        ))}
       </Container>
     </Section>
   );
