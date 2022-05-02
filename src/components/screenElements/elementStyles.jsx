@@ -91,6 +91,10 @@ export const MyEmail = styled(Paragraph)`
   font-size: ${FontSize.small};
   letter-spacing: 2px;
   writing-mode: vertical-rl;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
 
   &:hover {
     transition: all 300ms ease-in-out;

@@ -67,7 +67,7 @@ export const Section = styled.section`
   align-items: center;
 
   @media only screen and (max-width: 1300px) {
-    padding: 150px 100px;
+    padding: 90px 100px;
   }
   @media only screen and (max-width: 760px) {
     padding: 150px 20px;
@@ -249,7 +249,7 @@ export const Tag = styled.div`
   font-weight: 700;
   color: ${Colors.white};
   background-color: ${({ color }) => color && color};
-  padding: 8px 20px;
+  padding: 6px 15px;
 
   border: none;
   border-radius: 15px;
@@ -258,11 +258,6 @@ export const Tag = styled.div`
   &:hover {
     transition: all 200ms ease-in-out;
     transform: scale(1.05);
-  }
-
-  @media screen and (min-width: 550px) {
-    outline: 1px ${Colors.background} solid;
-    outline-offset: -3px;
   }
 `;
 
