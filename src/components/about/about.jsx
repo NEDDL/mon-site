@@ -27,7 +27,14 @@ const About = () => {
               alt="Headshot"
             />
           </ImageFrame>
-          <Paragraph>{AboutData.about}</Paragraph>
+          <Container>
+            {AboutData.about.map((p, i) => (
+              <>
+                <Paragraph key={i}>{p}</Paragraph>
+                <Separator gap={"15px"} />
+              </>
+            ))}
+          </Container>
         </Container>
         <Separator gap={"100px"} />
         <Paragraph bold>Certificates</Paragraph>
