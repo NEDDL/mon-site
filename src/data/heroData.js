@@ -22,6 +22,18 @@ export const HeroData = {
       link: "https://www.javascript.com/",
     },
     {
+      tag: "TypeScript",
+      link: "https://www.typescriptlang.org/",
+    },
+    {
+      tag: "Express.Js",
+      link: "https://expressjs.com/",
+    },
+    {
+      tag: "Node.Js",
+      link: "https://nodejs.org/en/",
+    },
+    {
       tag: "React.Js",
       link: "https://reactjs.org/",
     },
@@ -37,17 +49,28 @@ export const HeroData = {
       tag: "Styled-components",
       link: "https://styled-components.com/",
     },
-    // {
-    //   tag: "Axios",
-    //   link: "",
-
-    // },
-    // {
-    //   tag: "MongoDB",
-    //   link: "",
-    // },
     {
-      tag: "Firebase",
+      tag: "Axios",
+      link: "https://axios-http.com/docs/intro",
+    },
+    {
+      tag: "REST API",
+      link: "https://restfulapi.net/",
+    },
+    {
+      tag: "MongoDB",
+      link: "mongodb.com",
+    },
+    {
+      tag: "Mongoose",
+      link: "https://mongoosejs.com/",
+    },
+    {
+      tag: "Firestore",
+      link: "https://firebase.google.com/",
+    },
+    {
+      tag: "Firebase/Auth",
       link: "https://firebase.google.com/",
     },
     {
@@ -69,6 +92,10 @@ export const HeroData = {
     },
     {
       tag: "Vercel",
+      link: "https://vercel.com/dashboard",
+    },
+    {
+      tag: "Heroku",
       link: "https://vercel.com/dashboard",
     },
     // {
