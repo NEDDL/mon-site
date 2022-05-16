@@ -49,7 +49,7 @@ export const FontSize = {
   normal: "clamp(1em, 1.1vw, 1.2em)",
   smaller: "clamp(0.95em, 1.1vw, 1.1em)",
   small: "clamp(0.9em, 1.1vw, 1em)",
-  tag: "clamp(0.8em, 1.1vw, 1.2em)",
+  tag: "clamp(0.8em, 1.1vw, 1.05em)",
 };
 
 export const Fonts = {
@@ -246,7 +246,7 @@ export const Tag = styled.div`
   margin: 0;
   font-family: ${Fonts.monospace};
   font-size: ${FontSize.tag};
-  font-weight: 700;
+  font-weight: 600;
   color: ${Colors.white};
   background-color: ${({ color }) => color && color};
   padding: 6px 15px;
