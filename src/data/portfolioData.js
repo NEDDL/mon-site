@@ -40,4 +40,22 @@ export const PortfolioData = [
       project: "#",
     },
   },
+  {
+    title: "BTC News Twitter Bot",
+    summary:
+      "I developed this Twitter bot to gather crypto currency news with BTC focus. The bot runs on Heroku with Node.js and uses News API, Twitter API, MongoDB as a tweet history database.",
+    tags: [
+      "TypeScript",
+      "Express",
+      "Node.Js",
+      "MongoDB",
+      "Mongoose",
+      "Axios",
+      "Heroku",
+    ],
+    links: {
+      gitHub: "https://github.com/NEDDL/btc_Twitter",
+      project: "https://twitter.com/BTC_CryptoNewsy",
+    },
+  },
 ];
