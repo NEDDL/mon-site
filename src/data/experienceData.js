@@ -9,12 +9,7 @@ export const ExperienceData = [
     location: "Paris Area, France",
     companyLogo: "",
     companyLink: "",
-    highlights: [
-      "Co-Founded Soleilex and developed the process infrastructure and technological requirements of Sales, Marketing, Accounting & Finance, Procurement and Operations.",
-      "Designed and optimized Lead Generation funnel with a WordPress website through online advertisements and built an automated business flow with HubSpot for Marketing & Sales.",
-      "Launched targeted ads through Google Ads, Facebook Business Manager for lead generation.",
-      "Answering the strategical needs of the business and defining the direction in the market.",
-    ],
+    highlights: [],
     tags: [],
     relevantProjects: [],
   },
