@@ -48,11 +48,11 @@ export const Hero = () => {
         </Tags>
         <Separator gap={"60px"} />
         <a
-          href="mailto:mustafasaitonal@outlook.com"
+          href="https://www.upwork.com/workwith/onalmustafa"
           target="_blank"
           rel="noreferrer"
         >
-          <PrimaryButton>Want to talk to me?</PrimaryButton>
+          <PrimaryButton>Want to work with me?</PrimaryButton>
         </a>
       </Container>
     </Section>
