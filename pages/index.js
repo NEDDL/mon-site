@@ -17,6 +17,16 @@ export default function Home() {
       <NextSeo
         title="Mustafa ONAL | Developing exceptional digital experiences."
         description="I'am a web developer specialized in building exceptional digital experiences. I help developing great solutions for businesses."
+        openGraph={{
+          images: [
+            {
+              url: "/images/me.jpg",
+              width: 600,
+              height: 600,
+              alt: "Mustafa ONAL",
+            },
+          ],
+        }}
       />
       <Hero />
       <About />

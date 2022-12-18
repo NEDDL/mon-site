@@ -32,7 +32,7 @@ const About = () => {
               src={AboutData.image}
               height={300}
               width={300}
-              alt="Headshot"
+              alt="Mustafa Sait ONAL, Mustafa ONAL"
             />
           </ImageFrame>
         </Container>
