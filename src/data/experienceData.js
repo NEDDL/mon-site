@@ -9,7 +9,9 @@ export const ExperienceData = [
     location: "Paris Area, France",
     companyLogo: "",
     companyLink: "",
-    highlights: [],
+    highlights: [
+      "Web developer specialized in building exceptional digital experiences. I help with developing solutions with FERN and MERN stack.",
+    ],
     tags: [],
     relevantProjects: [],
   },

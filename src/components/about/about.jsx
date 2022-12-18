@@ -19,14 +19,6 @@ const About = () => {
         <H2>Who am I?</H2>
         <Separator gap={"60px"} />
         <Container flex column>
-          <ImageFrame>
-            <Image
-              src={AboutData.image}
-              height={300}
-              width={300}
-              alt="Headshot"
-            />
-          </ImageFrame>
           <Container>
             {AboutData.about.map((p, i) => (
               <>
@@ -35,6 +27,14 @@ const About = () => {
               </>
             ))}
           </Container>
+          <ImageFrame>
+            <Image
+              src={AboutData.image}
+              height={300}
+              width={300}
+              alt="Headshot"
+            />
+          </ImageFrame>
         </Container>
         <Separator gap={"100px"} />
         <Paragraph bold>Certificates</Paragraph>
