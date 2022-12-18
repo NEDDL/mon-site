@@ -20,7 +20,7 @@ export const data = [
     id: "education",
   },
   {
-    to: "/#resume",
+    to: "/Mustafa_ONAL_-_Full_Stack_JS_Developer__MERN,_FERN.pdf",
     text: "Resume",
     isButton: "true",
   },

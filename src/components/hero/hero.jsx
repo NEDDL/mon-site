@@ -48,7 +48,7 @@ export const Hero = () => {
         </Tags>
         <Separator gap={"60px"} />
         <a
-          href="https://www.upwork.com/workwith/onalmustafa"
+          href="mailto:mustafasaitonal@outlook.com"
           target="_blank"
           rel="noreferrer"
         >

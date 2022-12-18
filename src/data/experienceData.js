@@ -25,9 +25,9 @@ export const ExperienceData = [
     companyLink: "https://soleilex.com/",
     highlights: [
       "Co-Founded Soleilex and developed the process infrastructure and technological requirements of Sales, Marketing, Accounting & Finance, Procurement and Operations.",
-      "Designed and optimized Lead Generation funnel with a WordPress website through online advertisements and built an automated business flow with HubSpot for Marketing & Sales.",
+      "Designed and optimized Lead Generation funnel with a React/Next.js website through online advertisements and built an automated business flow with a custom React CRM for Marketing, Sales and Operations.",
       "Launched targeted ads through Google Ads, Facebook Business Manager for lead generation.",
-      "Answering the strategical needs of the business and defining the direction in the market.",
+      "Builded a custom CRM with React to track the customer information, projects status and others to increase the efficiency.",
     ],
     tags: [
       "Next.Js",
