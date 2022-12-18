@@ -21,8 +21,8 @@ export default function Home() {
           images: [
             {
               url: "/images/me.jpg",
-              width: 600,
-              height: 600,
+              width: 500,
+              height: 494,
               alt: "Mustafa ONAL",
             },
           ],
