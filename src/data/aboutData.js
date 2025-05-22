@@ -1,10 +1,11 @@
 export const AboutData = {
   image: "/images/me.jpg",
   about: [
-    "Hello! My name is Mustafa and I enjoy creating things that live on the internet. My interest in web development started back in 2014 when I decided to try editing WordPress themes — turns out customizing themes taught me a lot about HTML & CSS!",
-    "Fast-forward to today, I've had experience in a startup, huge financial corporations and even collaborated starting a new business. Currently I am a Freelance Full Stack Developer with MERN, FERN stacks. Feel free to contact me if you have projects to discuss!",
-    "I am also launching little apps while practicing different languages and stack technologies.",
-    "Here are some certificates that I obtained: ",
+    "Hello! My name is Mustafa, a Full Stack Developer passionate about building high-performing digital solutions with modern technologies like Next.js, React.js, Strapi, and Node.js.",
+    "My journey started in 2014 through WordPress customizations, evolving into professional development roles across startups, corporations, and co-founding a solar tech company.",
+    "I specialize in headless commerce, custom CRM systems, and scalable web platforms, combining engineering skills with strong business insight.",
+    "I'm currently contributing to open-source projects, building SDKs, and crafting full-stack applications with both the MERN and FERN stacks.",
+    "Feel free to reach out if you'd like to collaborate or discuss new ideas. I'm always up for meaningful tech conversations!",
   ],
   certificates: [
     {
