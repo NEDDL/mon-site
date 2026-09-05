@@ -34,3 +34,16 @@ jobs:
             sleep 1
           done
           npm run test:smoke -- http://localhost:3187
+      - name: Build and test the deployment image
+        shell: bash
+        run: |
+          docker build --tag portfolio:ci .
+          docker run --detach --name portfolio-ci --publish 127.0.0.1:3188:3000 portfolio:ci
+          trap 'docker logs portfolio-ci; docker rm --force portfolio-ci' EXIT
+          for attempt in {1..30}; do
+            if curl --fail --silent --output /dev/null http://127.0.0.1:3188; then
+              break
+            fi
+            sleep 1
+          done
+          npm run test:smoke -- http://localhost:3188
