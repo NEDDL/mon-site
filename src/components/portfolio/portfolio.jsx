@@ -12,9 +12,9 @@ import { PortfolioData } from "../../data/portfolioData";
 export const Portfolio = () => {
   return (
     <Section id="portfolio">
-      <Container width="1030px">
+      <Container $width="1030px">
         <H2>Selected engineering work</H2>
-        <Separator gap={"60px"} />
+        <Separator $gap={"60px"} />
         <PortfolioContainer>
           {PortfolioData.map((el, index) => (
             <PortfolioCard key={index} data={el} />

@@ -31,7 +31,7 @@ function Navbar() {
         >
           {show ? <CgClose /> : <CgMenu />}
         </MobileIcon>
-        <NavMenu as="ul" id="main-navigation" show={show} onKeyDown={(event) => {
+        <NavMenu as="ul" id="main-navigation" $show={show} onKeyDown={(event) => {
           if (event.key === "Escape") setShow(false);
         }}>
           {data.map((el) => (

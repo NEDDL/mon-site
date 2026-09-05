@@ -32,16 +32,16 @@ export const PortfolioCard = ({ data }) => {
           <BiLinkExternal size={25} color={Colors.white} />
         </a>}
       </CardHeader>
-      <Separator gap={"24px"} />
-      <CardTitle as="h3" inconsolata>{data.title}</CardTitle>
-      <Paragraph smaller darker>{data.status}</Paragraph>
+      <Separator $gap={"24px"} />
+      <CardTitle as="h3" $inconsolata>{data.title}</CardTitle>
+      <Paragraph $smaller $darker>{data.status}</Paragraph>
       <Separator />
-      <CardSummary smaller>{data.summary}</CardSummary>
+      <CardSummary $smaller>{data.summary}</CardSummary>
       {data.outcome && <>
-        <Separator gap={"16px"} />
-        <Paragraph smaller bold>{data.outcome}</Paragraph>
+        <Separator $gap={"16px"} />
+        <Paragraph $smaller $bold>{data.outcome}</Paragraph>
       </>}
-      <Separator gap={"40px"} />
+      <Separator $gap={"40px"} />
       <Tags>
         {data.tags &&
           data.tags.map((tag, index) => <Tag key={index}>{tag}</Tag>)}

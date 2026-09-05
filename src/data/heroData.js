@@ -3,7 +3,7 @@ export const HeroData = {
   name: "Mustafa Onal.",
   title: "Software, from idea to production.",
   shortText:
-    "I build <Highlighted>SaaS platforms, applied AI systems, and developer tools</Highlighted>. Hands-on across backend, frontend, architecture, and cloud infrastructure. Currently at Workfully and building Kortyx.",
+    "I build <span class='highlight'>SaaS platforms, applied AI systems, and developer tools</span>. Hands-on across backend, frontend, architecture, and cloud infrastructure. Currently at Workfully and building Kortyx.",
   tags: [
     { tag: "TypeScript", link: "https://www.typescriptlang.org/" },
     { tag: "Node.js", link: "https://nodejs.org/" },

@@ -72,7 +72,7 @@ export const Fonts = {
 export const Section = styled.section`
   scroll-margin-top: 100px;
   background-color: ${Colors.background};
-  min-height: ${({ fullHeight }) => (fullHeight ? "100vh" : null)};
+  min-height: ${({ $fullHeight }) => ($fullHeight ? "100vh" : null)};
   width: 100%;
   padding: 150px 50px;
   display: flex;
@@ -91,9 +91,9 @@ export const Section = styled.section`
   }
 `;
 export const Container = styled.div`
-  max-width: ${({ width }) => (width ? width : "1200px")};
-  display: ${({ flex }) => (flex ? "flex" : null)};
-  flex-direction: ${({ column }) => (column ? "row" : "column")};
+  max-width: ${({ $width }) => ($width ? $width : "1200px")};
+  display: ${({ $flex }) => ($flex ? "flex" : null)};
+  flex-direction: ${({ $column }) => ($column ? "row" : "column")};
 
   column-gap: 50px;
 
@@ -106,18 +106,18 @@ export const Container = styled.div`
 `;
 
 export const H1 = styled.h1`
-  color: ${({ darker }) => (darker ? Colors.dirtyWhite : Colors.white)};
+  color: ${({ $darker }) => ($darker ? Colors.dirtyWhite : Colors.white)};
   font-size: ${FontSize.big};
-  font-family: ${({ inconsolata }) =>
-    inconsolata ? Fonts.monospace : Fonts.sansSerif};
-  text-transform: ${({ uppercase }) => (uppercase ? "uppercase" : null)};
+  font-family: ${({ $inconsolata }) =>
+    $inconsolata ? Fonts.monospace : Fonts.sansSerif};
+  text-transform: ${({ $uppercase }) => ($uppercase ? "uppercase" : null)};
   font-weight: 700;
   margin: 0 0 5px 0;
 `;
 export const H2 = styled.h2`
-  color: ${({ darker }) => (darker ? Colors.dirtyWhite : Colors.white)};
-  font-family: ${({ inconsolata }) =>
-    inconsolata ? Fonts.monospace : Fonts.sansSerif};
+  color: ${({ $darker }) => ($darker ? Colors.dirtyWhite : Colors.white)};
+  font-family: ${({ $inconsolata }) =>
+    $inconsolata ? Fonts.monospace : Fonts.sansSerif};
   font-size: ${FontSize.medium};
   font-weight: 700;
   margin: 0 0 5px 0;
@@ -150,48 +150,48 @@ export const H2 = styled.h2`
 export const H3 = styled.h3``;
 
 export const Separator = styled.div`
-  height: ${({ gap }) => (gap ? gap : "5px")};
+  height: ${({ $gap }) => ($gap ? $gap : "5px")};
 `;
 
 export const Paragraph = styled.p`
-  color: ${({ darker }) => (darker ? Colors.dirtyWhite : Colors.white)};
-  font-family: ${({ inconsolata }) =>
-    inconsolata ? Fonts.monospace : Fonts.sansSerif};
-  font-size: ${({ smaller }) => (smaller ? FontSize.smaller : FontSize.normal)};
-  font-weight: ${({ bold }) => (bold ? 900 : 400)};
+  color: ${({ $darker }) => ($darker ? Colors.dirtyWhite : Colors.white)};
+  font-family: ${({ $inconsolata }) =>
+    $inconsolata ? Fonts.monospace : Fonts.sansSerif};
+  font-size: ${({ $smaller }) => ($smaller ? FontSize.smaller : FontSize.normal)};
+  font-weight: ${({ $bold }) => ($bold ? 900 : 400)};
   transition: all 200ms ease-in-out;
 
   line-height: 1.7em;
-  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
+  max-width: ${({ $maxWidth }) => ($maxWidth ? $maxWidth : "100%")};
 
-  Highlighted {
+  .highlight {
     color: ${Colors.teal};
     font-family: ${Fonts.monospace};
     margin: 0 5px;
   }
 `;
 export const Title = styled.p`
-  color: ${({ darker }) => (darker ? Colors.dirtyWhite : Colors.teal)};
-  font-family: ${({ inconsolata }) =>
-    inconsolata ? Fonts.monospace : Fonts.sansSerif};
-  font-size: ${({ smaller }) => (smaller ? FontSize.smaller : FontSize.normal)};
+  color: ${({ $darker }) => ($darker ? Colors.dirtyWhite : Colors.teal)};
+  font-family: ${({ $inconsolata }) =>
+    $inconsolata ? Fonts.monospace : Fonts.sansSerif};
+  font-size: ${({ $smaller }) => ($smaller ? FontSize.smaller : FontSize.normal)};
   font-weight: 900;
   transition: all 200ms ease-in-out;
 
   line-height: 1.7em;
-  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
+  max-width: ${({ $maxWidth }) => ($maxWidth ? $maxWidth : "100%")};
 `;
 
 export const Highlighted = styled.span`
   color: ${Colors.yellow};
-  font-family: ${({ inconsolata }) =>
-    inconsolata ? Fonts.monospace : Fonts.sansSerif};
+  font-family: ${({ $inconsolata }) =>
+    $inconsolata ? Fonts.monospace : Fonts.sansSerif};
 `;
 
 export const List = styled(Paragraph)`
   font-size: ${FontSize.small};
   margin-bottom: 10px;
-  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
+  max-width: ${({ $maxWidth }) => ($maxWidth ? $maxWidth : "100%")};
 
   &:before {
     content: "";
@@ -202,14 +202,13 @@ export const List = styled(Paragraph)`
     border-left: 7px solid ${Colors.green};
   }
 
-  ${Paragraph}
 `;
 
 export const Numbering = styled(Paragraph)`
   font-size: ${FontSize.small};
   margin-bottom: 5px;
-  max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "100%")};
-  font-size: ${({ smaller }) => (smaller ? FontSize.smaller : FontSize.normal)};
+  max-width: ${({ $maxWidth }) => ($maxWidth ? $maxWidth : "100%")};
+  font-size: ${({ $smaller }) => ($smaller ? FontSize.smaller : FontSize.normal)};
 
   &:before {
     counter-increment: submenu;
@@ -220,7 +219,6 @@ export const Numbering = styled(Paragraph)`
     font-family: ${Fonts.monospace};
   }
 
-  ${Paragraph}
 `;
 
 const Button = {
@@ -251,7 +249,7 @@ export const Tags = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: ${({ width }) => (width ? width : "850px")};
+  max-width: ${({ $width }) => ($width ? $width : "850px")};
   column-gap: 10px;
   row-gap: 10px;
 `;
@@ -262,7 +260,7 @@ export const Tag = styled.div`
   font-size: ${FontSize.tag};
   font-weight: 600;
   color: ${Colors.white};
-  background-color: ${({ color }) => color && color};
+  background-color: ${({ $color }) => $color && $color};
   padding: 6px 15px;
 
   border: none;
@@ -280,7 +278,7 @@ export const LittleTag = styled.div`
   font-family: ${Fonts.monospace};
   font-weight: 700;
   color: ${Colors.yellow};
-  /* background-color: ${({ color }) => color && color}; */
+  /* background-color: ${({ $color }) => $color && $color}; */
   /* padding: 8px 20px; */
   /* outline: 1px ${Colors.background} solid; */
   /* outline-offset: -3px; */

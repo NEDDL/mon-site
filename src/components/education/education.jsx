@@ -39,21 +39,21 @@ export const Education = () => {
 
   return (
     <Section id="education">
-      <Container width={"960px"}>
+      <Container $width={"960px"}>
         <H2>Where I have studied</H2>
         <ExperienceContainer>
           <div style={{ position: "relative", display: "block" }}>
-            <FixedMenu width={"200px"}>
+            <FixedMenu $width={"200px"}>
               {EducationData.map((el, index) => (
                 <div key={index}>
                   <Numbering
                     style={{ cursor: "pointer" }}
                     onClick={() => scrollTo(el.id)}
-                    smaller
+                    $smaller
                   >
                     {el.menuName}
                   </Numbering>
-                  <Separator gap={"15px"} />
+                  <Separator $gap={"15px"} />
                 </div>
               ))}
             </FixedMenu>
@@ -61,26 +61,26 @@ export const Education = () => {
           <ExperienceColumn>
             {EducationData.map((el, index) => (
               <Box key={index} id={el.id}>
-                <Paragraph bold>{el.title}</Paragraph>
+                <Paragraph $bold>{el.title}</Paragraph>
                 <Paragraph>{el.companyName}</Paragraph>
-                <Paragraph darker smaller>
+                <Paragraph $darker $smaller>
                   {el.startDate} - {el.endDate}
                 </Paragraph>
-                <Paragraph darker smaller>
+                <Paragraph $darker $smaller>
                   {el.location}
                 </Paragraph>
-                <Separator gap={"20px"} />
-                <Container width={"80%"}>
+                <Separator $gap={"20px"} />
+                <Container $width={"80%"}>
                   {el.highlights.map((el, index) => (
                     <List key={index}>{el}</List>
                   ))}
                 </Container>
-                <Separator gap={"20px"} />
-                <Paragraph smaller darker>
+                <Separator $gap={"20px"} />
+                <Paragraph $smaller $darker>
                   {el.tags.length >= 1 ? "Key learning topics" : null}
                 </Paragraph>
-                <Separator gap={"5px"} />
-                <Tags width={"90%"}>
+                <Separator $gap={"5px"} />
+                <Tags $width={"90%"}>
                   {el.tags.map((el, index) => (
                     <LittleTag key={index}>{el}</LittleTag>
                   ))}

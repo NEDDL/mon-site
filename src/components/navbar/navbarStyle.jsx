@@ -99,9 +99,9 @@ export const NavMenu = styled.div`
 
     background-color: ${Colors.background};
 
-    opacity: ${({ show }) => (show ? 1 : 0)};
-    visibility: ${({ show }) => (show ? "visible" : "hidden")};
-    transform: translateY(${({ show }) => (show ? "0" : "-10px")});
+    opacity: ${({ $show }) => ($show ? 1 : 0)};
+    visibility: ${({ $show }) => ($show ? "visible" : "hidden")};
+    transform: translateY(${({ $show }) => ($show ? "0" : "-10px")});
     transition: opacity 0.5s ease;
 
     z-index: 998;
@@ -113,27 +113,27 @@ export const NavItem = styled.li`
 
   cursor: pointer;
   margin-left: 20px;
-  margin-right: ${({ separator }) => (separator ? separator : "8px")};
-  padding: ${({ isButton }) => (isButton ? "0 15px" : "0")};
+  margin-right: ${({ $separator }) => ($separator ? $separator : "8px")};
+  padding: ${({ $isButton }) => ($isButton ? "0 15px" : "0")};
   padding-bottom: 3px;
 
-  font-weight: ${({ isButton }) => (isButton ? "700" : "400")};
+  font-weight: ${({ $isButton }) => ($isButton ? "700" : "400")};
 
   background-color: transparent;
-  border: ${({ isButton }) => (isButton ? "#267C99 2px solid" : "none")};
-  border-radius: ${({ isButton }) => (isButton ? "4px" : "0")};
+  border: ${({ $isButton }) => ($isButton ? "#267C99 2px solid" : "none")};
+  border-radius: ${({ $isButton }) => ($isButton ? "4px" : "0")};
 
   @media screen and (max-width: 960px) {
     position: static;
 
     flex-direction: column;
 
-    margin-bottom: ${({ separator }) => (separator ? separator : "8px")};
+    margin-bottom: ${({ $separator }) => ($separator ? $separator : "8px")};
   }
 `;
 
 export const NavLinks = styled.span`
-  color: ${({ isButton }) => (isButton ? Colors.teal : Colors.white)};
+  color: ${({ $isButton }) => ($isButton ? Colors.teal : Colors.white)};
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -143,8 +143,8 @@ export const NavLinks = styled.span`
 
   &:before {
     counter-increment: navLink;
-    content: ${({ isButton }) =>
-      isButton ? "white" : '"0"counter(navLink)"."'};
+    content: ${({ $isButton }) =>
+      $isButton ? "white" : '"0"counter(navLink)"."'};
     margin-right: 5px;
     color: ${Colors.teal};
     font-weight: 700;
@@ -163,7 +163,7 @@ export const ClientIcon = styled.span`
   padding-top: 6px;
   margin-right: 5px;
   color: #267c99;
-  display: ${({ showDropdown }) => (showDropdown ? "unset" : "none")};
+  display: ${({ $showDropdown }) => ($showDropdown ? "unset" : "none")};
 
   @media screen and (max-width: 960px) {
     margin-right: 5px;
