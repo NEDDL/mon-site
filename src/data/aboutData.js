@@ -1,5 +1,5 @@
 export const AboutData = {
-  "image": "/images/me.jpg",
+  "image": "/images/profile.jpeg",
   "about": [
     "I'm a senior software engineer based in Barcelona, working across SaaS platforms, applied AI, and developer tooling. I take products from ambiguous requirements through architecture, implementation, and production.",
     "At Workfully, I build recruitment software and contribute to agentic automation, connecting backend business rules, operational workflows, and reliable marketplace signals.",

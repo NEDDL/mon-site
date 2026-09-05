@@ -51,7 +51,8 @@ async function checkPortfolio() {
   const retiredCV = await fetch(new URL("/CV.pdf", base));
   await retiredCV.arrayBuffer();
   assert.equal(retiredCV.status, 404, "Retired CV URL returns 404");
-  for (const asset of ["/images/me.jpg", "/images/LOGO.svg", "/favicon.ico"]) {
+  assert.ok(visible.includes("profile.jpeg"), "Updated portrait is rendered");
+  for (const asset of ["/images/profile.jpeg", "/images/me.jpg", "/images/LOGO.svg", "/favicon.ico"]) {
     const assetResponse = await fetch(new URL(asset, base));
     await assetResponse.arrayBuffer();
     assert.equal(assetResponse.status, 200, `Asset available: ${asset}`);
