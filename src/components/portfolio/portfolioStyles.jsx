@@ -8,16 +8,20 @@ import {
 } from "../../../styles/globalStyles";
 
 export const PortfolioContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 20px;
   row-gap: 40px;
+  @media screen and (max-width: 720px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 `;
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 330px;
+  width: 100%;
+  min-width: 0;
   min-height: 390px;
   background-color: #32334e;
   padding: 40px 20px 20px 20px;
@@ -47,13 +51,13 @@ export const Card = styled.div`
 export const CardTitle = styled(Title)`
   font-size: ${FontSize.normal};
   font-weight: 400;
-  ${Title}
+
 `;
 export const CardSummary = styled(Paragraph)`
-  font-size: ${FontSize.small};
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4em;
-  ${Paragraph}
+
 `;
 
 export const CardHeader = styled.div`
@@ -72,7 +76,7 @@ export const Tag = styled.span`
   user-select: none;
   font-family: ${Fonts.monospace};
   margin-right: 10px;
-  opacity: 0.6;
+  font-size: 0.875rem;
 
   &:after {
     content: ",";

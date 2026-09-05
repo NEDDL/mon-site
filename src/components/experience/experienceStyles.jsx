@@ -16,8 +16,8 @@ export const ExperienceColumn = styled.div`
   flex-direction: column;
 
   align-self: flex-start;
-  max-width: ${({ width }) => (width ? width : null)};
-  flex: ${({ width }) => (width ? null : "1 1 auto")};
+  max-width: ${({ $width }) => ($width ? $width : null)};
+  flex: ${({ $width }) => ($width ? null : "1 1 auto")};
 `;
 
 export const ExperienceHeader = styled.div`

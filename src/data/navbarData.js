@@ -6,7 +6,7 @@ export const data = [
   },
   {
     to: "/#portfolio",
-    text: "Portfolio",
+    text: "Projects",
     id: "portfolio",
   },
   {
@@ -15,13 +15,8 @@ export const data = [
     id: "experience",
   },
   {
-    to: "/#studies",
-    text: "Studies",
+    to: "/#education",
+    text: "Education",
     id: "education",
-  },
-  {
-    to: "/CV.pdf",
-    text: "Resume",
-    isButton: "true",
   },
 ];

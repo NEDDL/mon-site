@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
-import { Waypoint } from "react-waypoint";
 import {
   Container,
   H1,
@@ -39,7 +38,7 @@ export const Experience = () => {
 
   return (
     <Section id="experience">
-      <Container width={"960px"}>
+      <Container $width={"960px"}>
         <H2>Where I have worked</H2>
         <ExperienceContainer>
           <div style={{ position: "relative", display: "block" }}>
@@ -49,11 +48,11 @@ export const Experience = () => {
                   <Numbering
                     style={{ cursor: "pointer" }}
                     onClick={() => scrollTo(el.id)}
-                    smaller
+                    $smaller
                   >
                     {el.menuName}
                   </Numbering>
-                  <Separator gap={"15px"} />
+                  <Separator $gap={"15px"} />
                 </div>
               ))}
             </FixedMenu>
@@ -61,26 +60,26 @@ export const Experience = () => {
           <ExperienceColumn>
             {ExperienceData.map((el, index) => (
               <Box key={index} id={el.id}>
-                <Paragraph bold>{el.title}</Paragraph>
+                <Paragraph $bold>{el.title}</Paragraph>
                 <Paragraph>{el.companyName}</Paragraph>
-                <Paragraph darker smaller>
+                <Paragraph $darker $smaller>
                   {el.startDate} - {el.endDate}
                 </Paragraph>
-                <Paragraph darker smaller>
+                <Paragraph $darker $smaller>
                   {el.location}
                 </Paragraph>
-                <Separator gap={"20px"} />
-                <Container width={"80%"}>
+                <Separator $gap={"20px"} />
+                <Container $width={"80%"}>
                   {el.highlights.map((el, index) => (
                     <List key={index}>{el}</List>
                   ))}
                 </Container>
-                <Separator gap={"20px"} />
-                <Paragraph smaller darker>
+                <Separator $gap={"20px"} />
+                <Paragraph $smaller $darker>
                   {el.tags.length >= 1 ? "Relevant skills" : null}
                 </Paragraph>
-                <Separator gap={"5px"} />
-                <Tags width={"90%"}>
+                <Separator $gap={"5px"} />
+                <Tags $width={"90%"}>
                   {el.tags.map((el, index) => (
                     <LittleTag key={index}>{el}</LittleTag>
                   ))}

@@ -1,91 +1,89 @@
 export const PortfolioData = [
   {
-    title: "NextShopKit Website",
-    summary:
-      "The official website for the NextShopKit SDK, built to showcase its features, documentation, and developer use cases. Designed with a developer-friendly UX and SEO in mind, it includes interactive examples, typed API references, and an optimized landing experience using modern frontend tooling.",
-    tags: ["Next.js", "React", "TypeScript", "Contentful", "SEO", "Docusaurus"],
-    links: {
-      gitHub: "",
-      project: "https://nextshopkit.com",
-    },
+    "title": "Kortyx",
+    "status": "Active beta · Personal project",
+    "summary": "A TypeScript framework for AI agents with explicit workflows, streaming, persistent state, and human-in-the-loop interrupts. I build the runtime, provider integrations, React bindings, CLI, and self-hosted Studio. The framework is Apache-2.0; the Studio UI is source-available.",
+    "tags": [
+      "TypeScript",
+      "Agent workflows",
+      "Runtime",
+      "Developer tools"
+    ],
+    "links": {
+      "gitHub": "https://github.com/kortyx-io/kortyx",
+      "project": "https://kortyx.io/"
+    }
   },
-
   {
-    title: "NextShopKit SDK",
-    summary:
-      "NextShopKit is an open-source SDK for building custom Shopify storefronts with Next.js. It offers typed functions to fetch products, collections, carts, and metafields. The SDK handles advanced metafield parsing, cart state management with React Context, and integrates seamlessly with Shopify’s Storefront GraphQL API.",
-    tags: [
+    "title": "Workfully Marketplace Operations",
+    "status": "Production · Workfully",
+    "summary": "Recruitment software that helps delivery teams identify stalled hiring pipelines and act on them. My work spans backend business rules, the Operations Control Center, and reliable metrics that support revenue forecasting and agentic marketplace automation.",
+    "tags": [
+      "Backend engineering",
+      "Agentic automation",
+      "PostgreSQL",
+      "dbt",
+      "Kestra",
+      "AWS"
+    ],
+    "links": {}
+  },
+  {
+    "title": "Qualify AI Interviewing",
+    "status": "Enterprise beta delivered · CleverConnect",
+    "summary": "Led the technical foundations of a multi-tenant AI interviewing product with multilingual voice and chat, a conversational recruiter interface, and durable interview analysis. Built production observability, prompt-version tracking, and deterministic citation checks.",
+    "outcome": "Sub-second voice response · About $0.50 per 20-minute interview in model and speech costs",
+    "tags": [
+      "TypeScript",
+      "LangGraph",
+      "LiveKit",
+      "Temporal",
+      "Langfuse"
+    ],
+    "links": {
+      "project": "https://www.cleverconnect.com/qualify-agent"
+    }
+  },
+  {
+    "title": "Soleilex CRM & Business Automation",
+    "status": "Delivered · Soleilex",
+    "summary": "A custom platform connecting customer records, construction quotations, contract signatures, and invoicing. Integrated Qonto payment verification and the French Cadastre API, with invoices generated directly from approved quotations.",
+    "outcome": "Bespoke quote preparation: about 4 hours to 10 minutes",
+    "tags": [
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "API integrations"
+    ],
+    "links": {}
+  },
+  {
+    "title": "NextShopKit SDK",
+    "status": "Past project · Not actively maintained",
+    "summary": "A published TypeScript SDK for custom Shopify storefronts with Next.js. Built typed Storefront API abstractions, metafield parsing, cart state management, and automated npm releases.",
+    "tags": [
       "TypeScript",
       "Next.js",
       "Shopify",
-      "Storefront API",
-      "GraphQL",
-      "React",
-      "Open Source",
+      "GraphQL"
     ],
-    links: {
-      gitHub: "https://github.com/NextShopKit/sdk",
-      project: "https://www.npmjs.com/package/@nextshopkit/sdk",
-    },
+    "links": {
+      "gitHub": "https://github.com/NextShopKit/sdk",
+      "project": "https://www.npmjs.com/package/@nextshopkit/sdk"
+    }
   },
-
   {
-    title: "KitSolairePro Headless E-commerce",
-    summary:
-      "KitSolairePro is a fully headless Shopify storefront for selling solar kits online. Built with Next.js and Storefront API, it features a dynamic configurator that helps customers select components like panels, inverters, and mounting kits, along with integrated SEO and cart logic.",
-    tags: [
+    "title": "KitSolairePro Storefront",
+    "status": "Delivered · Soleilex ecosystem",
+    "summary": "A headless Shopify storefront for configurable solar kits. Built guided product selection, metafield-driven component options, and cart logic for panels, inverters, and mounting systems.",
+    "tags": [
       "Next.js",
       "Shopify",
-      "Storefront API",
-      "GraphQL",
       "React",
-      "Material UI",
-      "Metafields",
+      "Product configurators"
     ],
-    links: {
-      gitHub: "",
-      project: "https://kitsolairepro.fr/", // Replace with actual URL if different
-    },
-  },
-  {
-    title: "Soleilex Custom CRM",
-    summary:
-      "A fully custom real-time CRM built for managing solar installation projects. It features structured client onboarding, quote and invoice generation, secure digital signatures, integrated maps with cadastral lookup, real-time comments and notifications, and a complete file system on AWS S3. Built for compliance, performance, and seamless collaboration across sales, admin, and field teams.",
-    tags: [
-      "Next.js",
-      "React",
-      "PostgreSQL",
-      "Supabase",
-      "Firestore",
-      "Node.js",
-      "Firebase",
-      "AWS S3",
-    ],
-    links: {
-      gitHub: "",
-      project: "",
-    },
-  },
-
-  {
-    title: "Soleilex Corporate Website",
-    summary:
-      "Soleilex is a French company who specializes in Solar Panel Installation. The customers can find information about solar panels and leave their information through a special form.",
-
-    tags: ["React", "Next", "Redux", "Firebase", "Styled-Components", "Formik"],
-    links: {
-      gitHub: "",
-      project: "https://soleilex-web.vercel.app/",
-    },
-  },
-  {
-    title: "Personal website",
-    summary:
-      "This project is actually this website. It is open-source and you can find the code in GitHub! If you like it, feel free to clone it.",
-    tags: ["React", "Next", "Vercel", "Styled-Components"],
-    links: {
-      gitHub: "https://github.com/NEDDL/mon-site",
-      project: "#",
-    },
-  },
+    "links": {
+      "project": "https://kitsolairepro.fr/"
+    }
+  }
 ];

@@ -5,11 +5,12 @@ const SocialMenu = () => {
   return (
     <>
       <FixedLeft>
-        <a href="https://github.com/neddl" target="_blank" rel="noreferrer">
+        <a href="https://github.com/neddl" target="_blank" rel="noreferrer" aria-label="GitHub">
           <Github />
         </a>
         <a
           href="https://www.linkedin.com/in/mustafasaitonal/"
+          aria-label="LinkedIn"
           target="_blank"
           rel="noreferrer"
         >
@@ -17,6 +18,7 @@ const SocialMenu = () => {
         </a>
         <a
           href="https://instagram.com/mustafasaitonal"
+          aria-label="Instagram"
           target="_blank"
           rel="noreferrer"
         >
