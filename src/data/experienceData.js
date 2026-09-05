@@ -1,122 +1,117 @@
 export const ExperienceData = [
   {
-    id: "nextshopkit",
-    menuName: "NextShopKit",
-    companyName: "NextShopKit",
-    title: "Open-Source Full Stack Developer (Shopify API SDK)",
-    startDate: "Sep 2024",
-    endDate: "Present",
-    location: "Remote",
-    companyLogo: "",
-    companyLink: "",
-    highlights: [
-      "Developed @nextshopkit/sdk, a modular JavaScript/TypeScript SDK for custom Shopify storefronts with Next.js.",
-      "Built advanced metafield parsing, React Context cart logic, and abstraction utilities for Shopify Storefront GraphQL API.",
-      "Published SDK via npm and implemented automated CI/CD with GitHub Actions.",
+    "id": "workfully",
+    "menuName": "Workfully",
+    "companyName": "Workfully",
+    "title": "Senior AI Engineer",
+    "startDate": "Jun 2026",
+    "endDate": "Present",
+    "location": "Barcelona, Spain",
+    "highlights": [
+      "Build recruitment platform capabilities and contribute to agentic automation, aligning backend behavior with marketplace business rules.",
+      "Created the Operations Control Center to surface stalled hiring pipelines, explain delivery issues, and support operational decisions at scale.",
+      "Delivered the initial AWS/Kestra infrastructure, CI automation, historical capture, and core metrics in two weeks.",
+      "Established shared business definitions and reliable data foundations for revenue forecasting, invoicing, and agent workflows."
     ],
-    tags: [
-      "Next.js",
-      "Shopify",
-      "GraphQL",
-      "React",
+    "tags": [
       "TypeScript",
-      "GitHub Actions",
-    ],
-    relevantProjects: [],
-  },
-  {
-    id: "kitsolairepro",
-    menuName: "KitSolairePro",
-    companyName: "KitSolairePro",
-    title: "Full Stack Developer",
-    startDate: "Sep 2024",
-    endDate: "Present",
-    location: "Paris, France",
-    companyLogo: "",
-    companyLink: "",
-    highlights: [
-      "Developed a full Shopify headless storefront using Next.js and Storefront API with dynamic solar kit configurators.",
-      "Integrated product metafields and advanced cart logic for customizable kits and mounting/inverter options.",
-      "Implemented technical SEO features including OpenGraph, JSON-LD, and canonical tags.",
-    ],
-    tags: [
-      "Next.js",
-      "Shopify",
-      "Headless CMS",
-      "SEO",
-      "JavaScript",
-      "TypeScript",
-    ],
-    relevantProjects: [],
-  },
-  {
-    id: "soleilex",
-    menuName: "Soleilex",
-    companyName: "Soleilex",
-    title: "Full Stack Developer",
-    startDate: "Feb 2021",
-    endDate: "Mar 2025",
-    location: "Paris, France",
-    companyLogo: "/images/soleilex.jpg",
-    companyLink: "https://soleilex.com/",
-    highlights: [
-      "Built the Soleilex website using Next.js and Strapi with fully dynamic CMS features.",
-      "Developed a React/PostgreSQL CRM with invoicing, internal notes, and PDF generation.",
-      "Designed REST APIs to automate workflows and external integrations for compliance.",
-      "Optimized for SEO with metadata, OpenGraph, and Google Search Console integration.",
-    ],
-    tags: [
-      "Next.js",
-      "React",
-      "Strapi",
+      "Backend engineering",
+      "Agentic automation",
       "PostgreSQL",
-      "Node.js",
-      "Express",
-      "REST API",
-    ],
-    relevantProjects: [],
+      "dbt",
+      "Kestra",
+      "AWS",
+      "GitHub Actions"
+    ]
   },
   {
-    id: "sg",
-    menuName: "Societe Generale",
-    companyName: "Société Générale Assurances",
-    title: "Frontend Developer & Product Owner",
-    startDate: "Sep 2019",
-    endDate: "Nov 2020",
-    location: "Paris, France",
-    companyLogo: "/images/sg.jpg",
-    companyLink:
-      "https://www.assurances.societegenerale.com/en/individual/about/",
-    highlights: [
-      "Developed a React + Strapi internal tool for 200+ users across 9 countries, saving €250–300K.",
-      "Led Agile sprints and developed relational data models across UX, engineering, and compliance.",
-      "Conducted user research and built localized UI/UX prototypes using Figma and Adobe XD.",
+    "id": "cleverconnect",
+    "menuName": "CleverConnect",
+    "companyName": "CleverConnect",
+    "title": "Full Stack Engineer · Applied AI",
+    "startDate": "Jul 2025",
+    "endDate": "Jun 2026",
+    "location": "Paris, France · Remote",
+    "highlights": [
+      "Led architecture and the majority of hands-on engineering for a greenfield, multi-tenant AI interviewing product, taking it to enterprise beta usage.",
+      "Built multilingual voice and chat workflows with LiveKit and LangGraph, plus durable interview analysis with Temporal and self-service analysis reruns.",
+      "Established a TypeScript monorepo with shared contracts, testing, GitLab CI, and Kubernetes/Argo CD delivery.",
+      "Connected Langfuse traces to prompt versions, production costs, and user feedback; implemented deterministic citation validation.",
+      "Mentored three engineers, supported their transition from Angular to React, and enforced architectural boundaries with custom ESLint rules."
     ],
-    tags: [
+    "tags": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Fastify",
+      "Prisma",
+      "LiveKit",
+      "LangGraph",
+      "Temporal",
+      "Kubernetes"
+    ]
+  },
+  {
+    "id": "soleilex",
+    "menuName": "Soleilex",
+    "companyName": "Soleilex",
+    "title": "Full Stack Developer",
+    "startDate": "Feb 2021",
+    "endDate": "Apr 2025",
+    "location": "Paris, France · Remote",
+    "highlights": [
+      "Built interconnected CRM, content, and commerce products using React, Next.js, Node.js, PostgreSQL, Shopify, and Strapi.",
+      "Automated quotations, contract signatures, and invoicing, reducing bespoke construction quote preparation from about four hours to 10 minutes.",
+      "Integrated Qonto payment verification and the French Cadastre API into operational workflows.",
+      "Delivered a headless Shopify storefront with configurable solar kits and a CMS that non-technical teams could manage independently."
+    ],
+    "tags": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "PostgreSQL",
+      "Shopify",
+      "Strapi",
+      "API integrations"
+    ]
+  },
+  {
+    "id": "sg",
+    "menuName": "Société Générale",
+    "companyName": "Société Générale Assurances",
+    "title": "Frontend Developer & Product Owner",
+    "startDate": "Sep 2019",
+    "endDate": "Nov 2020",
+    "location": "Paris, France",
+    "highlights": [
+      "Developed a React and Strapi internal product used by more than 200 people across nine countries.",
+      "Combined frontend delivery and Product Owner responsibilities, coordinating user research, data models, and Agile delivery across UX, engineering, and compliance.",
+      "Prototyped and adapted the experience to different market needs using Figma and Adobe XD."
+    ],
+    "tags": [
       "React",
       "Strapi",
-      "Agile",
-      "Figma",
-      "User Research",
-      "Product Ownership",
-    ],
-    relevantProjects: [],
+      "Product ownership",
+      "User research",
+      "Agile"
+    ]
   },
   {
-    id: "lseg",
-    menuName: "LSEG",
-    companyName: "London Stock Exchange Group (LSEG)",
-    title: "Internship",
-    startDate: "Mar 2019",
-    endDate: "Aug 2019",
-    location: "Paris, France",
-    companyLogo: "/images/lseg.jpg",
-    companyLink: "https://www.ftserussell.com/beyond-ratings-data",
-    highlights: [
-      "Collaborated with developers to convert design specs into implementation-ready assets.",
-      "Contributed to UI design using Adobe XD and ensured integration into corporate platforms.",
+    "id": "lseg",
+    "menuName": "LSEG",
+    "companyName": "London Stock Exchange Group (LSEG)",
+    "title": "Internship",
+    "startDate": "Mar 2019",
+    "endDate": "Aug 2019",
+    "location": "Paris, France",
+    "highlights": [
+      "Collaborated with developers to translate design specifications into implementation-ready assets.",
+      "Contributed to interface design and website improvements using Adobe XD, with a focus on consistency and web standards."
     ],
-    tags: ["Adobe XD", "UX/UI", "Web Standards", "Design Systems"],
-    relevantProjects: [],
-  },
+    "tags": [
+      "UI/UX",
+      "Adobe XD",
+      "Web standards"
+    ]
+  }
 ];

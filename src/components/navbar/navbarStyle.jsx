@@ -56,6 +56,9 @@ export const NavIcon = styled.img`
 `;
 
 export const MobileIcon = styled.div`
+  border: 0;
+  background: transparent;
+  padding: 8px;
   display: none;
   cursor: pointer;
   z-index: 999;

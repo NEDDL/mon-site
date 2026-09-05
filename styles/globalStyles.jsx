@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     counter-reset: section;
 }
   body {
+    background-color: #28293E;
     padding: 0;
     margin: 0;
     
@@ -19,6 +20,17 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
     position: relative;
     transition: var(--transition);
+  }
+  :focus-visible {
+    outline: 2px solid #3FCFDD;
+    outline-offset: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      transition: none !important;
+      animation: none !important;
+    }
   }
   
   * {
@@ -33,7 +45,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Colors = {
   background: "#28293E",
   white: "#EBEAEF",
-  dirtyWhite: "#9090A7",
+  dirtyWhite: "#B2B3C6",
   red: "#F73A3B",
   green: "#29C270",
   blue: "#3B63F8",
@@ -48,8 +60,8 @@ export const FontSize = {
   medium: "clamp(1.5em, 7vw, 2em)",
   normal: "clamp(1em, 1.1vw, 1.2em)",
   smaller: "clamp(0.95em, 1.1vw, 1.1em)",
-  small: "clamp(0.9em, 1.1vw, 1em)",
-  tag: "clamp(0.8em, 1.1vw, 1.05em)",
+  small: "1rem",
+  tag: "clamp(0.875rem, 1.1vw, 1.05rem)",
 };
 
 export const Fonts = {
@@ -58,6 +70,7 @@ export const Fonts = {
 };
 
 export const Section = styled.section`
+  scroll-margin-top: 100px;
   background-color: ${Colors.background};
   min-height: ${({ fullHeight }) => (fullHeight ? "100vh" : null)};
   width: 100%;
@@ -211,6 +224,7 @@ export const Numbering = styled(Paragraph)`
 `;
 
 const Button = {
+  fontSize: "1rem",
   padding: "10px 20px",
   borderRadius: "5px",
   cursor: "pointer",

@@ -1,63 +1,15 @@
 export const HeroData = {
-  starter: "Hi, my name is",
-  name: "Mustafa ONAL.",
-  title: "I build things for the web",
+  starter: "Senior Software Engineer · Barcelona, Spain",
+  name: "Mustafa Onal.",
+  title: "Software, from idea to production.",
   shortText:
-    "I'm a <Highlighted>Next.js and React developer</Highlighted> who builds <Highlighted>high-performance web applications</Highlighted> by blending <Highlighted>engineering precision</Highlighted> with business insight.",
+    "I build <Highlighted>SaaS platforms, applied AI systems, and developer tools</Highlighted>. Hands-on across backend, frontend, architecture, and cloud infrastructure. Currently at Workfully and building Kortyx.",
   tags: [
-    {
-      tag: "TypeScript",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
-      tag: "Next.Js",
-      link: "https://nextjs.org/",
-    },
-
-    {
-      tag: "React.Js",
-      link: "https://reactjs.org/",
-    },
-    {
-      tag: "Redux",
-      link: "https://redux.js.org/",
-    },
-    {
-      tag: "Tailwind",
-      link: "",
-    },
-    {
-      tag: "Node.Js",
-      link: "https://nodejs.org/en/",
-    },
-    {
-      tag: "REST API",
-      link: "https://restfulapi.net/",
-    },
-    {
-      tag: "Express.Js",
-      link: "https://expressjs.com/",
-    },
-
-    {
-      tag: "Firestore",
-      link: "https://firebase.google.com/",
-    },
-    {
-      tag: "Firebase/Auth",
-      link: "https://firebase.google.com/",
-    },
-    {
-      tag: "Supabase",
-      link: "",
-    },
-    {
-      tag: "AWS",
-      link: "",
-    },
-    {
-      tag: "GitHub",
-      link: "https://github.com/",
-    },
+    { tag: "TypeScript", link: "https://www.typescriptlang.org/" },
+    { tag: "Node.js", link: "https://nodejs.org/" },
+    { tag: "React", link: "https://react.dev/" },
+    { tag: "PostgreSQL", link: "https://www.postgresql.org/" },
+    { tag: "AI workflows", link: "https://kortyx.io/docs/start-here" },
+    { tag: "Kubernetes", link: "https://kubernetes.io/" },
   ],
 };

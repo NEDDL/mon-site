@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mustafa Onal · Personal website
 
-## Getting Started
+Portfolio at [mustafa-onal.com](https://mustafa-onal.com/), built with Next.js, React, and styled-components.
 
-First, run the development server:
+## Local development
 
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Content
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `src/data/heroData.js`: introduction and core technologies.
+- `src/data/aboutData.js`: professional narrative.
+- `src/data/portfolioData.js`: selected work, project status, outcomes, and public links.
+- `src/data/experienceData.js`: professional roles and dates.
+- `src/data/educationData.js`: education.
+- `src/data/navbarData.js`: section navigation.
+- `pages/index.js`: page title, description, and canonical URL.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Use only supported achievements, distinguish beta from production, and mark past projects clearly. Leave links absent for internal products instead of using empty or placeholder URLs.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The website intentionally has no résumé download. The previous PDF is removed from the current public assets, not erased from Git history or existing deployments.
 
-## Learn More
+## Validation
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm run lint
+npm run build
+npm run start -- --port 3187
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In another terminal, using Node.js 18 or newer:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sh
+node scripts/check-portfolio.cjs http://localhost:3187
+```
 
-## Deploy on Vercel
+The smoke check verifies served content, navigation targets, link labels, metadata, retained image assets, and a 404 response for the retired PDF URL. It does not replace interactive or visual browser testing.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Delivery
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open a pull request against `main`. Keep the existing hosting setup; merging and deploying are separate from preparing the PR.

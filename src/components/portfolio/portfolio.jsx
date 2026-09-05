@@ -13,7 +13,7 @@ export const Portfolio = () => {
   return (
     <Section id="portfolio">
       <Container width="1030px">
-        <H2>{"Some projects I have built"}</H2>
+        <H2>Selected engineering work</H2>
         <Separator gap={"60px"} />
         <PortfolioContainer>
           {PortfolioData.map((el, index) => (

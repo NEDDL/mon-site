@@ -1,7 +1,5 @@
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import Image from "next/image";
-import styled from "styled-components";
 import About from "../src/components/about/about";
 import Education from "../src/components/education/education";
 import Experience from "../src/components/experience/experience";
@@ -15,8 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextSeo
-        title="Mustafa ONAL | Developing exceptional digital experiences."
-        description="I'am a web developer specialized in building exceptional digital experiences. I help developing great solutions for businesses."
+        title="Mustafa Onal | Senior Software Engineer & Applied AI"
+        description="Senior Software Engineer based in Barcelona. Building SaaS platforms, applied AI systems, and developer tools, from architecture to production."
+        canonical="https://mustafa-onal.com/"
         openGraph={{
           images: [
             {
