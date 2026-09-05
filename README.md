@@ -65,3 +65,5 @@ npm run test:smoke -- http://localhost:3188
 ```
 
 Coolify is the deployment target; Vercel is no longer required to run this site.
+
+`vercel.json` disables Vercel's automatic Git deployments. The previous deployment can be retained temporarily for rollback without receiving new builds.
